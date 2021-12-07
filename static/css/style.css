@@ -1,7 +1,26 @@
 @charset "UFT-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+:root {
+    --header-color: #000;
+
+    --standard-fonts: 'Montserrat', Arial, sans-serif;
+}
+
+header {
+    background-color: var(--header-color);
+    height: 100px;
+}
+
+.container {
+    background-color: red;
+    height: 100px;
+    margin: auto;
+    max-width: 1140px;
 }
