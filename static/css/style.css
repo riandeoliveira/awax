@@ -10,8 +10,11 @@
 }
 
 :root {
-    --header-bg-color: #000;
-    
+    --primary-color: #000;
+    --secondary-color: #b28756;
+    --standard-color: #fff;
+    --transparency-color: #000000cc;
+
     --standard-fonts: 'Montserrat', Arial, sans-serif;
 }
 
@@ -19,9 +22,9 @@ body {
     font-family: var(--standard-fonts);
 }
 
-header {
-    background-color: var(--header-bg-color);
-    color: #fff;
+.header {
+    background-color: var(--primary-color);
+    color: var(--standard-color);
     height: 100px;
 }
 
@@ -57,8 +60,8 @@ header {
 
 .nav-link {
     align-items: center;
-    border-bottom: 6px solid var(--header-bg-color);
-    color: #fff;
+    border-bottom: 6px solid var(--primary-color);
+    color: var(--standard-color);
     display: flex;
     font-size: 13px;
     font-weight: 700;
@@ -68,15 +71,88 @@ header {
     text-transform: uppercase;
 }
 
-.navigation-lists .active,
+.header .active,
 .nav-link:hover {
-    border-bottom: 6px solid #b28756;
+    border-color: var(--secondary-color);
     color: #ccc;
 }
 
-.banner-area {
+.banner {
     background-image: url("../images/banner.jpg");
     background-position: top;
     background-size: cover;
     height: calc(100vh - 100px);
+    overflow: hidden;
+}
+
+.banner .sliders {
+    background-color: var(--transparency-color);
+    height: 100%;
+    width: 1000vw;
+}
+
+.banner .slide-area {
+    display: inline-block;
+    height: 100%;
+    width: 100vw;
+}
+
+.banner .slide {
+    align-items: center;
+    color: var(--standard-color);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.banner .title {
+    font-size: 70px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.banner .title .span {
+    color: var(--secondary-color);
+}
+
+.banner .subtitle {
+    font-size: 23px;
+    margin: 15px 0 20px 0;
+    text-transform: uppercase;
+}
+
+.banner .button {
+    background-color: var(--secondary-color);
+    border-radius: 22px;
+    color: var(--standard-color);
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 25px;
+    padding: 17px 55px;
+    text-transform: uppercase;
+}
+
+.banner .sliders-pointers {
+    align-items: center;
+    display: flex;
+    height: 20px;
+    justify-content: center;
+    margin-top: -50px;
+    position: absolute;
+    width: 100vw;
+}
+
+.banner .pointer {
+    border: 2px solid var(--secondary-color);
+    border-radius: 8px;
+    cursor: pointer;
+    height: 15px;
+    margin: 0 7px;
+    width: 15px;
+}
+
+.banner .active {
+    background-color: var(--secondary-color);
 }
