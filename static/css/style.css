@@ -71,4 +71,12 @@ header {
 .navigation-lists .active,
 .nav-link:hover {
     border-bottom: 6px solid #b28756;
+    color: #ccc;
+}
+
+.banner-area {
+    background-image: url("../images/banner.jpg");
+    background-position: top;
+    background-size: cover;
+    height: calc(100vh - 100px);
 }
