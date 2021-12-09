@@ -20,6 +20,7 @@
 
 body {
     font-family: var(--standard-fonts);
+    overflow-x: hidden;
 }
 
 .header {
@@ -43,9 +44,9 @@ body {
 }
 
 .logo {
-    height: 80px;
+    height: 75px;
     object-fit: cover;
-    width: 80px;
+    width: 75px;
 }
 
 .menu {
@@ -75,6 +76,7 @@ body {
 .nav-link:hover {
     border-color: var(--secondary-color);
     color: #ccc;
+    transition: all 0.1s linear;
 }
 
 .banner {
@@ -122,11 +124,11 @@ body {
     text-transform: uppercase;
 }
 
-.banner .button {
+.button {
     background-color: var(--secondary-color);
     border-radius: 22px;
     color: var(--standard-color);
-    display: block;
+    display: inline-block;
     font-size: 12px;
     font-weight: bold;
     margin-top: 25px;
@@ -134,12 +136,17 @@ body {
     text-transform: uppercase;
 }
 
+.button:hover {
+    background-color: #d8a264;
+    transition: all 0.1s linear;
+}
+
 .banner .sliders-pointers {
     align-items: center;
     display: flex;
     height: 20px;
     justify-content: center;
-    margin-top: -50px;
+    margin-top: -70px;
     position: absolute;
     width: 100vw;
 }
@@ -153,6 +160,67 @@ body {
     width: 15px;
 }
 
+.banner .pointer:hover {
+    background-color: var(--secondary-color);
+    transition: all 0.1s linear;
+}
+
 .banner .active {
     background-color: var(--secondary-color);
+}
+
+.default {
+    padding: 50px 0;
+    width: 100vw;
+}
+
+.section-about-us .section-body {
+    display: flex;
+}
+
+/* temporario */
+.section-about-us .description {
+    color: #adadad;
+}
+
+.default .title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.default .description {
+    font-size: 13px;
+}
+
+.default .title,
+.default .description {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.default .section-body {
+    margin: auto;
+    margin-top: 50px;
+    max-width: 1140px;
+    min-height: 200px;
+}
+
+.section-about-us .section-text {
+    flex: 1;
+    margin: 0 30px 10px 0;
+}
+
+.default .text {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.section-about-us .section-image-link {
+    width: 500px;
+}
+
+.section-about-us .image-link {
+    box-shadow: 0px 17px 30px #777;
 }
