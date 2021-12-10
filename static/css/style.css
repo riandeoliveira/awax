@@ -369,3 +369,81 @@
 .section-our-projects .section-button {
     text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bg-team {
+    background-image: url("../images/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+}
+
+.section-our-team {
+    background-color: #000000cc;
+    padding-top: 50px;
+}
+
+.section-our-team .title {
+    color: var(--standard-color);
+}
+
+.section-our-team .description {
+    color: #AEAEAE;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.section-our-team .sliders {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+
+.section-our-team .slide-area {
+    height: 100%;
+}
+
+.section-our-team .slide {
+    min-height: 300px;
+    align-items: center;
+    background-color: var(--standard-color);
+    color: var(--standard-color);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    margin-right: 20px;
+    width: 300px;
+}
